@@ -1,0 +1,12 @@
+{
+  "name": "is-absolute-url-dts",
+  "version": "1.0.0",
+  "description": "TypeScript definition for is-absolute-url",
+  "keywords": [
+    "is-absolute-url",
+    "dts"
+  ],
+  "author": "facekapow",
+  "license": "MIT",
+  "typings": "index.d.ts"
+}

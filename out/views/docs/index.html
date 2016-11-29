@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Pipam - Docs</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../main.css" type="text/css" rel="stylesheet" />
+    <link href="./main.css" type="text/css" rel="stylesheet" />
+    <link href="../../components/include.css" type="text/css" rel="stylesheet" />
+    <link href="../../markdown.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav id="pageNav">
+      <a id="top-icon" href="../../../index.html">
+        <img id="top-icon-img" src="../../../assets/icon.png" alt="Pipam" />
+        <span>Pipam</span>
+      </a>
+      <a class="navItem" href="../downloads/index.html">Downloads</a>
+      <a class="navItem active" href="./index.html">Docs</a>
+    </nav>
+    <div id="docsBar"></div>
+    <div id="pageCont">
+      <nav id="docsNav"></nav>
+      <div id="docsCont" data-script-pref="typescript" data-os-pref="unix" class="rendersMarkdown"></div>
+    </div>
+    <footer id="pageFooter">
+      <a id="ghLink" href="https://github.com/pipam/pipam"><img src="../../../assets/GitHub-Mark-Light-120px-plus.png" alt="Github" /> Pipam on Github</a>
+    </footer>
+    <script src="../../startup.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

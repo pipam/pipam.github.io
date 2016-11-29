@@ -1,0 +1,32 @@
+{
+  "title": "Pipam",
+  "path": "README.md",
+  "children": [
+    {
+      "title": "Managing Plugins",
+      "path": "managing-plugins.md"
+    },
+    {
+      "title": "Plugins",
+      "path": "plugins/README.md",
+      "children": [
+        {
+          "title": "Plugin Functions",
+          "path": "plugins/functions.md"
+        },
+        {
+          "title": "Logs",
+          "path": "plugins/logs.md"
+        },
+        {
+          "title": "Plugin Properties",
+          "path": "plugins/properties.md"
+        },
+        {
+          "title": "Root Privileges",
+          "path": "plugins/root-privileges.md"
+        }
+      ]
+    }
+  ]
+}

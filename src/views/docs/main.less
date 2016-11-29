@@ -1,0 +1,166 @@
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../../assets/source-code-pro/SourceCodePro-Regular.ttf') format('truetype');
+}
+
+#docsBar {
+  width: 100%;
+  z-index: 60;
+  background-color: #fff;
+}
+
+#pageCont {
+  position: relative;
+
+  #docsNav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: 0.7s height ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    box-shadow: 0 0 10px #000;
+    z-index: 50;
+    background-color: #0d5b7c;
+
+    & > * {
+      flex-grow: 1;
+      text-align: center;
+      transition: 0.2s background-color ease-in-out;
+      background-color: transparent;
+
+      &:hover {
+        background-color: #127dab;
+      }
+    }
+
+    &.shown {
+      height: 100%;
+    }
+
+    .docsNavItem {
+      text-decoration: none !important;
+      color: #fff !important;
+      border-bottom: 0.1em solid transparent;
+      transition: 0.2s background-color ease-in-out, 0.2s border-bottom-color ease-in-out;
+
+      &:hover {
+        border-bottom-color: #fff;
+      }
+    }
+
+    & > .docsNavItem {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2em;
+    }
+
+    .docsNavExpandCont {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column wrap;
+      cursor: pointer;
+
+      & > .docsNavItem:first-child {
+        font-size: 1.2em;
+      }
+
+      /*&:hover > .expand {
+        opacity: 1;
+        pointer-events: auto;
+      }*/
+
+      .expand {
+        //transition: 0.2s opacity ease-in-out;
+        //opacity: 0;
+        //pointer-events: none;
+        display: flex;
+        flex-flow: column wrap;
+      }
+
+      /*.expand:hover {
+        opacity: 1;
+        pointer-events: auto;
+      }*/
+    }
+
+    &.shown + #docsCont {
+      height: 0;
+    }
+  }
+
+  #docsCont {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.7s height ease-in-out;
+    padding: 0 1em 1em;
+    margin: auto;
+    /*transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-property: margin, width;*/
+
+    /* OS prefs */
+    &[data-os-pref="unix"] {
+      & *[data-os="win"], & *[data-os="win"] + * {
+        display: none;
+      }
+    }
+
+    &[data-os-pref="windows"] {
+      & *[data-os="unix"], & *[data-os="unix"] + * {
+        display: none;
+      }
+    }
+    /* end OS prefs */
+
+    /* script prefs */
+    &[data-script-pref="typescript"] {
+      & *[data-lang="js"], & *[data-lang="js"] + * {
+        display: none;
+      }
+    }
+
+    &[data-script-pref="javascript"] {
+      & *[data-lang="ts"], & *[data-lang="ts"] + * {
+        display: none;
+      }
+    }
+    /* end script prefs */
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #pageCont #docsCont {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #pageCont #docsCont {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #pageCont #docsCont {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #pageCont #docsCont {
+    width: 60%;
+  }
+}

@@ -1,0 +1,186 @@
+#pageCont a {
+  color: #127dab !important;
+  border-bottom: 0.1em solid transparent;
+  -webkit-transition: 0.2s border-bottom-color ease-in-out, 0.2s color ease-in-out;
+  transition: 0.2s border-bottom-color ease-in-out, 0.2s color ease-in-out;
+  text-decoration: none !important;
+}
+#pageCont a:hover {
+  border-bottom-color: #000;
+  color: #1591c6 !important;
+}
+#pageCont #hero {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 16em;
+  min-height: 100vh;
+  padding: 2em 1em;
+  font-size: 2em;
+  color: #a4a4a4;
+  position: relative;
+  box-shadow: 0 0 15px #000 inset;
+  line-height: normal;
+  background: url('../assets/bg.svg') #414141;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*#heroImages {
+      img {
+        position: absolute;
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+        transition-property: top, bottom, left, right, opacity;
+        opacity: 0;
+
+        &.shown {
+          opacity: 1;
+        }
+      }
+
+      #brewImg {
+        left: 1em;
+        top: 30%;
+        transform: translateY(-50%);
+        height: 2em;
+
+        &.shown {
+          top: 35%;
+        }
+      }
+      #chocolateyImg {
+        right: 1em;
+        bottom: 30%;
+        transform: translateY(50%);
+        height: 2em;
+
+        &.shown {
+          bottom: 35%;
+        } 
+      }
+    }*/
+}
+#pageCont #hero #heroShuffleText {
+  color: #707070;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  height: 3.5rem;
+}
+#pageCont #hero #heroShuffleText span {
+  display: block;
+  -webkit-transition: 0.5s font-size ease-in-out, 0.5s margin-top ease-in-out;
+  transition: 0.5s font-size ease-in-out, 0.5s margin-top ease-in-out;
+  font-size: 1rem;
+}
+#pageCont #hero #heroShuffleText .active {
+  font-size: 2rem;
+  color: #fff;
+  /*&:not(:first-child) {
+          margin-top: 0.25em;
+        }*/
+}
+#pageCont #hero #heroShuffleText .passed {
+  margin-top: -1.5em;
+}
+#pageCont .pane {
+  min-height: 8em;
+  min-height: 50vh;
+  box-shadow: 0 0 15px #000;
+  line-height: 1.5em;
+  font-size: 1.2em;
+}
+#pageCont .pane.left-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+}
+#pageCont .pane.left-right .left,
+#pageCont .pane.left-right .right {
+  width: 50%;
+  padding: 1em;
+}
+#pageCont .pane.centered {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#pageCont .pane.centered .header {
+  padding: 1em;
+  padding-bottom: 0.15em;
+  font-size: 2em;
+}
+#pageCont .pane.centered .body {
+  padding: 1em;
+  padding-top: 0.15em;
+}
+#pageCont #pane-1 .left {
+  background-color: #1a1;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5em;
+}
+#pageCont #pane-1 .right {
+  background-color: #fff;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#pageCont #pane-2 .left {
+  background-color: #fff;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#pageCont #pane-2 .right {
+  background-color: #a11;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5em;
+}

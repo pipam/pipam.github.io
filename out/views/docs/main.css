@@ -1,0 +1,164 @@
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../../assets/source-code-pro/SourceCodePro-Regular.ttf') format('truetype');
+}
+#docsBar {
+  width: 100%;
+  z-index: 60;
+  background-color: #fff;
+}
+#pageCont {
+  position: relative;
+}
+#pageCont #docsNav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  -webkit-transition: 0.7s height ease-in-out;
+  transition: 0.7s height ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  box-shadow: 0 0 10px #000;
+  z-index: 50;
+  background-color: #0d5b7c;
+}
+#pageCont #docsNav > * {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: center;
+  -webkit-transition: 0.2s background-color ease-in-out;
+  transition: 0.2s background-color ease-in-out;
+  background-color: transparent;
+}
+#pageCont #docsNav > *:hover {
+  background-color: #127dab;
+}
+#pageCont #docsNav.shown {
+  height: 100%;
+}
+#pageCont #docsNav .docsNavItem {
+  text-decoration: none !important;
+  color: #fff !important;
+  border-bottom: 0.1em solid transparent;
+  -webkit-transition: 0.2s background-color ease-in-out, 0.2s border-bottom-color ease-in-out;
+  transition: 0.2s background-color ease-in-out, 0.2s border-bottom-color ease-in-out;
+}
+#pageCont #docsNav .docsNavItem:hover {
+  border-bottom-color: #fff;
+}
+#pageCont #docsNav > .docsNavItem {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.2em;
+}
+#pageCont #docsNav .docsNavExpandCont {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
+  cursor: pointer;
+  /*&:hover > .expand {
+        opacity: 1;
+        pointer-events: auto;
+      }*/
+  /*.expand:hover {
+        opacity: 1;
+        pointer-events: auto;
+      }*/
+}
+#pageCont #docsNav .docsNavExpandCont > .docsNavItem:first-child {
+  font-size: 1.2em;
+}
+#pageCont #docsNav .docsNavExpandCont .expand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
+}
+#pageCont #docsNav.shown + #docsCont {
+  height: 0;
+}
+#pageCont #docsCont {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-transition: 0.7s height ease-in-out;
+  transition: 0.7s height ease-in-out;
+  padding: 0 1em 1em;
+  margin: auto;
+  /*transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-property: margin, width;*/
+  /* OS prefs */
+  /* end OS prefs */
+  /* script prefs */
+  /* end script prefs */
+}
+#pageCont #docsCont[data-os-pref="unix"] *[data-os="win"],
+#pageCont #docsCont[data-os-pref="unix"] *[data-os="win"] + * {
+  display: none;
+}
+#pageCont #docsCont[data-os-pref="windows"] *[data-os="unix"],
+#pageCont #docsCont[data-os-pref="windows"] *[data-os="unix"] + * {
+  display: none;
+}
+#pageCont #docsCont[data-script-pref="typescript"] *[data-lang="js"],
+#pageCont #docsCont[data-script-pref="typescript"] *[data-lang="js"] + * {
+  display: none;
+}
+#pageCont #docsCont[data-script-pref="javascript"] *[data-lang="ts"],
+#pageCont #docsCont[data-script-pref="javascript"] *[data-lang="ts"] + * {
+  display: none;
+}
+@media screen and (min-width: 600px) {
+  #pageCont #docsCont {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 800px) {
+  #pageCont #docsCont {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #pageCont #docsCont {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #pageCont #docsCont {
+    width: 60%;
+  }
+}

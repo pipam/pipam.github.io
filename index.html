@@ -1,0 +1,71 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Pipam</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="out/main.css" type="text/css" rel="stylesheet" />
+    <link href="out/index.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav id="pageNav">
+      <a id="top-icon" href="./index.html">
+        <img id="top-icon-img" src="assets/icon.png" alt="Pipam" />
+        <span>Pipam</span>
+      </a>
+      <a class="navItem" href="./out/views/downloads/index.html">Downloads</a>
+      <a class="navItem" href="./out/views/docs/index.html">Docs</a>
+    </nav>
+    <div id="pageCont">
+      <div id="hero" class="pane">
+        <span>Manage packages from <div id="heroShuffleText">
+          <span>apt-get</span>
+          <span>Homebrew</span>
+          <!--<span>Chocolatey</span>-->
+          <span>everything</span>
+        </div></span>
+        <!--<div id="heroImages">
+          <img id="brewImg" src="http://brew.sh/img/homebrew-256x256.png" />
+          <img id="chocolateyImg" src="https://avatars0.githubusercontent.com/u/811025?v=3&s=200" />
+        </div>-->
+      </div>
+      <div class="pane left-right" id="pane-1">
+        <div class="left">
+          <span>Pipam is package manager... manager</span>
+        </div>
+        <div class="right">
+          <p>
+            Pipam provides a nice, common UI for using package managers. Want detailed information about packages
+            at your will? Pipam can do that. Like GUIs better than terminals? Pipam is just what you need. Just want a common interface for managing packages? Pipam excels at that &#x1f609;.
+          </p>
+        </div>
+      </div>
+      <div class="pane left-right" id="pane-2">
+        <div class="left">
+          <p>
+            All of Pipam's core functionality is based on plugins. Pipam plugins provide interfaces to package managers for common features like installing, listing, searching, etc. And it's really easy to <a href="./out/views/docs/index.html?doc=plugins/README.md">write plugins</a>, too!
+          </p>
+        </div>
+        <div class="right">
+          <span>Manage all the things!</span>
+        </div>
+      </div>
+      <div class="pane centered" id="pane-3">
+        <div class="header">
+          <span>Get Started</span>
+        </div>
+        <div class="body">
+          <p>
+            Head on over to the <a href="./out/views/downloads/index.html">Downloads</a> section and <em>download</em> the latest version of Pipam. That's it! Just open it for the first time and it'll start setting up.
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer id="pageFooter">
+      <a id="ghLink" href="https://github.com/pipam/pipam"><img src="./assets/GitHub-Mark-Light-120px-plus.png" alt="Github" /> Pipam on Github</a>
+    </footer>
+    <script src="out/startup.js"></script>
+    <script src="out/index.js"></script>
+  </body>
+</html>

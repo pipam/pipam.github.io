@@ -1,0 +1,56 @@
+@import (css) url('../node_modules/highlight.js/styles/atom-one-dark.css');
+
+.rendersMarkdown {
+  line-height: 1.5em;
+
+  :not(pre) code, pre {
+    font-family: 'Source Code Pro', monospace;
+    background-color: #414141;
+    color: #fff;
+    padding: 0 0.25em;
+    box-shadow: 0 0 5px #000;
+    border-radius: 5px;
+    margin: 0 0.1em;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+
+  pre {
+    padding: 0.5em;
+    box-shadow: 0 0 15px #000;
+    line-height: 1em;
+    overflow: auto;
+
+    .hljs-comment, .hljs-quote {
+      color: #a6b2c7;
+    }
+  }
+
+  kbd {
+    font-family: 'Source Code Pro', monospace;
+    padding: 0.1em 0.2em;
+    background-color: #fff;
+    margin: 0 0.1em;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #000;
+  }
+
+  blockquote {
+    border-left: 6px solid #1591c6;
+    margin: 1em 25px;
+    padding-left: 15px;
+    background-color: #e4e4e4;
+  }
+
+  a {
+    color: #127dab !important;
+    border-bottom: 0.1em solid transparent;
+    transition: 0.2s border-bottom-color ease-in-out, 0.2s color ease-in-out;
+    text-decoration: none !important;
+
+    &:hover {
+      border-bottom-color: #000;
+      color: #1591c6 !important;
+    }
+  }
+}

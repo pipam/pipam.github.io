@@ -1,0 +1,98 @@
+.component.radio-field {
+  border-radius: 0.2em;
+  box-shadow: 0 0 10px #000;
+  display: inline-block;
+  margin: 0.5em;
+  /*label:active {
+    box-shadow: 0 0 10px var(--components-primary-color-contrast);
+  }*/
+  /* contrast when it's inside another component */
+  /* if it's on a primary bg component (e.g. card body), reset it */
+}
+.component.radio-field input {
+  display: none;
+}
+.component.radio-field label {
+  border: 0.1em solid #1591c6;
+  border-color: var(--components-secondary-color);
+  -webkit-transition-property: background-color, border-color;
+  transition-property: background-color, border-color;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  background-color: #fff;
+  background-color: var(--components-primary-color);
+  color: #1591c6;
+  color: var(--components-secondary-color);
+  position: relative;
+  padding: 0.25em;
+  font-size: 1em;
+  font-family: inherit;
+  outline: none !important;
+  display: inline-block;
+}
+.component.radio-field label:hover {
+  background-color: #1591c6 !important;
+  background-color: var(--components-secondary-color) !important;
+  color: #fff !important;
+  color: var(--components-primary-color) !important;
+  border-color: #1591c6 !important;
+  border-color: var(--components-secondary-color) !important;
+}
+.component.radio-field input:checked + label {
+  background-color: #0d5b7c;
+  background-color: var(--components-secondary-color-darker);
+  color: #fff;
+  color: var(--components-primary-color);
+  border-color: #0d5b7c;
+  border-color: var(--components-secondary-color-darker);
+}
+.component .component.radio-field label {
+  border-color: #fff;
+  border-color: var(--components-primary-color);
+  background-color: #1591c6;
+  background-color: var(--components-secondary-color);
+  color: #fff;
+  color: var(--components-primary-color);
+}
+.component .component.radio-field label:hover {
+  background-color: #fff !important;
+  background-color: var(--components-primary-color) !important;
+  color: #1591c6 !important;
+  color: var(--components-secondary-color) !important;
+  border-color: #fff !important;
+  border-color: var(--components-primary-color) !important;
+}
+.component .component.radio-field input:checked + label {
+  background-color: #aaa;
+  background-color: var(--components-primary-color-darker);
+  color: #1591c6;
+  color: var(--components-secondary-color);
+  border-color: #aaa;
+  border-color: var(--components-primary-color-darker);
+}
+.component.primary-bg .component.radio-field label {
+  border-color: #1591c6;
+  border-color: var(--components-secondary-color);
+  background-color: #fff;
+  background-color: var(--components-primary-color);
+  color: #1591c6;
+  color: var(--components-secondary-color);
+}
+.component.primary-bg .component.radio-field label:hover {
+  background-color: #1591c6 !important;
+  background-color: var(--components-secondary-color) !important;
+  color: #fff !important;
+  color: var(--components-primary-color) !important;
+  border-color: #1591c6 !important;
+  border-color: var(--components-secondary-color) !important;
+}
+.component.primary-bg .component.radio-field input:checked + label {
+  background-color: #0d5b7c;
+  background-color: var(--components-secondary-color-darker);
+  color: #fff;
+  color: var(--components-primary-color);
+  border-color: #0d5b7c;
+  border-color: var(--components-secondary-color-darker);
+}

@@ -1,0 +1,12 @@
+{
+  "name": "sniffr-dts",
+  "version": "1.0.0",
+  "description": "TypeScript definition for sniffr",
+  "keywords": [
+    "sniffr",
+    "dts"
+  ],
+  "author": "facekapow",
+  "license": "MIT",
+  "typings": "index.d.ts"
+}
