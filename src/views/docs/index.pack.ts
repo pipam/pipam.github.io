@@ -33,7 +33,7 @@ const docsBar = document.getElementById('docsBar');
 const docsCont = document.getElementById('docsCont');
 const docsNav = document.getElementById('docsNav');
 const docParam = getParameterByName('doc');
-const baseDocUrl = /*'https://raw.githubusercontent.com/pipam/pipam/master/docs'*/`${window.location.protocol}//${window.location.hostname}:8081/docs`;
+const baseDocUrl = 'https://raw.githubusercontent.com/pipam/pipam/master/docs'/*`${window.location.protocol}//${window.location.hostname}:8081/docs`*/;
 
 const toggleNavButton = new ButtonComponent({
   text: 'Toggle Docs Nav'

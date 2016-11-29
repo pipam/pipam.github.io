@@ -79,7 +79,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 	var docsCont = document.getElementById('docsCont');
 	var docsNav = document.getElementById('docsNav');
 	var docParam = getParameterByName('doc');
-	var baseDocUrl = window.location.protocol + "//" + window.location.hostname + ":8081/docs";
+	var baseDocUrl = 'https://raw.githubusercontent.com/pipam/pipam/master/docs';
 	var toggleNavButton = new button_1.default({
 		text: 'Toggle Docs Nav'
 	});
