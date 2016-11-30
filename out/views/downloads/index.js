@@ -13532,8 +13532,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 	"use strict";
 
-	exports.version = '1.0.0';
-	exports.description = "Pipam's first release! Pipam so far only has 2 plugins (`pipam-homebrew` and `pipam-apt`) with a 3rd on the way (`pipam-chocolatey`). All the issues and kinks for building, testing, and deploying have been worked out and can now build on macOS, Linux, and Windows successfully.";
+	exports.version = '1.0.1';
+	exports.description = "Fixed an issue where Pipam wouldn't start because of a `require` error while trying to find the `package.json`.";
 	//# sourceMappingURL=downloads.js.map
 
 	/***/
