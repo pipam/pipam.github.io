@@ -137,7 +137,9 @@ rmrf(appdir).then(() => {
         logger.section = 'build:less';
         logger.subsection = `rendering file "${relative(process.cwd(), filename)}"`;
         return readFile(filename, 'utf8').then(src => {
-          return callWithPromiseOrCallback(less.render.bind(less), src);
+          return callWithPromiseOrCallback(less.render.bind(less), src, {
+            filename
+          });
         }).then(({ css }) => {
           return postcss([ autoprefixer ]).process(css);
         }).then(({ css }) => {
