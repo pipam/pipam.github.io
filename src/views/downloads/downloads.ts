@@ -1,2 +1,2 @@
-export const version = '1.0.1';
-export const description = "Fixed an issue where Pipam wouldn't start because of a `require` error while trying to find the `package.json`.";
+export const version = '1.0.2';
+export const description = "Fixes a problem where `node_modules` is empty on Linux, and also fixes an error on Windows at startup.";

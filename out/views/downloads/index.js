@@ -13532,8 +13532,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 	"use strict";
 
-	exports.version = '1.0.1';
-	exports.description = "Fixed an issue where Pipam wouldn't start because of a `require` error while trying to find the `package.json`.";
+	exports.version = '1.0.2';
+	exports.description = "Fixes a problem where `node_modules` is empty on Linux, and also fixes an error on Windows at startup.";
 	//# sourceMappingURL=downloads.js.map
 
 	/***/
