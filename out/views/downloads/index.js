@@ -13532,8 +13532,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 	"use strict";
 
-	exports.version = '1.0.2';
-	exports.description = "Fixes a problem where `node_modules` is empty on Linux, and also fixes an error on Windows at startup.";
+	exports.version = '1.1.0';
+	exports.description = "Integrates functionality to check for plugin updates at startup and be able to update them.";
 	//# sourceMappingURL=downloads.js.map
 
 	/***/

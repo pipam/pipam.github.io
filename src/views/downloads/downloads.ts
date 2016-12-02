@@ -1,2 +1,2 @@
-export const version = '1.0.2';
-export const description = "Fixes a problem where `node_modules` is empty on Linux, and also fixes an error on Windows at startup.";
+export const version = '1.1.0';
+export const description = "Integrates functionality to check for plugin updates at startup and be able to update them.";
